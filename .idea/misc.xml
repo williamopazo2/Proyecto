@@ -3,11 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/willi/AndroidStudioProjects/MyApplication2/app/src/main/res/drawable/iniciador.xml" value="0.2425" />
+        <entry key="..\:/Users/willi/AndroidStudioProjects/MyApplication2/app/src/main/res/drawable/iniciadorapp.xml" value="0.2425" />
         <entry key="..\:/Users/willi/AndroidStudioProjects/MyApplication2/app/src/main/res/layout-v31/activity_perfil41.xml" value="0.3625" />
         <entry key="..\:/Users/willi/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/activity_galeriazapas.xml" value="0.33" />
-        <entry key="..\:/Users/willi/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/activity_main.xml" value="0.17603850050658562" />
+        <entry key="..\:/Users/willi/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/willi/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/activity_perfil41.xml" value="0.33" />
         <entry key="..\:/Users/willi/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/activity_perfiljordan4university.xml" value="0.1" />
+        <entry key="..\:/Users/willi/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/activity_register.xml" value="0.33" />
       </map>
     </option>
   </component>
