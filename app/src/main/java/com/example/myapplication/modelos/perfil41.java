@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.myapplication.modelos;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,20 +7,23 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
-public class perfiljordan4jbalvin extends AppCompatActivity {
+import com.example.myapplication.R;
+
+public class perfil41 extends AppCompatActivity {
 
     private Button buttoncompra;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_perfiljordan4jbalvin);
+        setContentView(R.layout.activity_perfil41);
 
 
         /*redireccion boton*/
         buttoncompra = findViewById(R.id.buttoncompra);
-        String URL = "https://stockx.com/es-es/air-jordan-1-retro-high-j-balvin";
+        String URL = "https://stockx.com/es-es/air-jordan-4-retro-university-blue";
         buttoncompra.setOnClickListener(new View.OnClickListener(){
 
             @Override
@@ -31,5 +34,8 @@ public class perfiljordan4jbalvin extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+
     }
+
 }

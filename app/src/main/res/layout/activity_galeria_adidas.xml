@@ -4,9 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
-    tools:context=".galeriamodelos.Galeriazapas">
-
+    tools:context=".modelos.galeriaAdidas">
 
     <ScrollView
 
@@ -52,7 +50,7 @@
                 android:id="@+id/imageView19"
                 android:layout_width="match_parent"
                 android:layout_height="39dp"
-                app:srcCompat="@drawable/jordanlogo" />
+                app:srcCompat="@drawable/adidas" />
 
             <TextView
                 android:id="@+id/textView4"
@@ -201,6 +199,4 @@
 
         </LinearLayout>
     </ScrollView>
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

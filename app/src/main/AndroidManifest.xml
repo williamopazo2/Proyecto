@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.myapplication" >
+    package="com.example.myapplication">
 
     <application
         android:allowBackup="true"
@@ -12,23 +12,38 @@
         android:roundIcon="@drawable/logo3app"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication"
-        tools:targetApi="31" >
+        tools:targetApi="31">
         <activity
-            android:name=".perfiljordan4jbalvin"
+            android:name=".modelos.galeriaNike"
             android:exported="false" />
         <activity
-            android:name=".register"
+            android:name=".modelos.galeriaAdidas"
             android:exported="false" />
         <activity
-            android:name=".perfil41"
+            android:name=".modelos.jordan4xoffwhite"
             android:exported="false" />
         <activity
-            android:name=".Galeriazapas"
+            android:name=".modelos.jordan1xdior"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".modelos.jordan4military"
+            android:exported="false" />
+        <activity
+            android:name=".modelos.perfiljordan4jbalvin"
+            android:exported="false" />
+        <activity
+            android:name=".general.register"
+            android:exported="false" />
+        <activity
+            android:name=".modelos.perfil41"
+            android:exported="false" />
+        <activity
+            android:name=".galeriamodelos.Galeriazapas"
+            android:exported="false" />
+        <activity
+            android:name=".general.MainActivity"
             android:exported="true"
-            android:theme="@style/SplashUp" >
+            android:theme="@style/SplashUp">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

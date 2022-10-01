@@ -1,16 +1,23 @@
-package com.example.myapplication;
+package com.example.myapplication.modelos;
 
-public class Marcas {
+import java.util.ArrayList;
+
+public class MarcasSpinner {
     private String marcas;
     private String mostrarMarcas;
 
-    public Marcas(String marcas){
+    public MarcasSpinner(){
+
+    }
+
+    public MarcasSpinner(String marcas){
         this.marcas = marcas;
     }
 
     public String getMarcas(){
         return marcas;
     }
+
     public void setMarcas(String marcas){
         this.marcas = marcas;
     }
@@ -20,4 +27,6 @@ public class Marcas {
         this.mostrarMarcas =  this.mostrarMarcas = marcas;
         return mostrarMarcas;
     }
+
+
 }

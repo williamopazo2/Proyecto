@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:backgroundTint="@color/white"
-    tools:context=".perfil41"
+    tools:context=".modelos.perfil41"
     tools:targetApi="s">
 
 
