@@ -29,11 +29,15 @@ public class MainActivity extends AppCompatActivity {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+
         setTheme(R.style.Theme_MyApplication);
 
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_main);
+
+
+        /*boton registrar*/
         Button btn_registrar = (Button) findViewById(R.id.btn_registrar);
 
         btn_registrar.setOnClickListener(new View.OnClickListener() {
@@ -43,6 +47,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
+        /*validacion inicio de sesion*/
         TextView nombreusuario = (TextView) findViewById(R.id.nombreusuario);
         TextView contrasenha = (TextView) findViewById(R.id.pw);
 
@@ -75,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        /*redireccion boton*/
+
 
     }
 }

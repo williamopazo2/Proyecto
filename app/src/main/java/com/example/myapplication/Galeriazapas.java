@@ -16,6 +16,7 @@ public class Galeriazapas extends AppCompatActivity {
 
     Spinner spinner;
     Button Btn1;
+    Button Btn2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,6 +55,16 @@ public class Galeriazapas extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(Galeriazapas.this, perfil41.class));
+            }
+        });
+
+        Btn2 = (Button) findViewById(R.id.Btn2);
+
+        Btn2.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(Galeriazapas.this, perfiljordan4jbalvin.class));
             }
         });
     }

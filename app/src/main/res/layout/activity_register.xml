@@ -35,7 +35,7 @@
         app:layout_constraintVertical_bias="0.36" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/editPW"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -48,7 +48,7 @@
         app:layout_constraintVertical_bias="0.412" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/editNombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -138,15 +138,15 @@
         android:id="@+id/registrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="#FDD835"
         android:text="Registrar"
-        android:backgroundTint="#E32020"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.949"
+        app:layout_constraintHorizontal_bias="0.928"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.953" />
+        app:layout_constraintVertical_bias="0.944" />
 
     <ImageView
         android:id="@+id/imageView10"
@@ -223,7 +223,7 @@
         app:layout_constraintVertical_bias="0.24" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/editCorreo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -235,5 +235,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.291" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
 
