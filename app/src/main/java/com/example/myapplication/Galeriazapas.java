@@ -9,14 +9,15 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
-public class Galeriazapas extends AppCompatActivity {
+public class Galeriazapas extends AppCompatActivity implements View.OnClickListener{
 
     Spinner spinner;
-    Button Btn1;
-    Button Btn2;
+    Button Btn1,Btn2;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,24 +49,22 @@ public class Galeriazapas extends AppCompatActivity {
             }
         });
 
-
+        /*university*/
         Btn1 = (Button) findViewById(R.id.Btn1);
-
-        Btn1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(Galeriazapas.this, perfil41.class));
-            }
-        });
-
+        Btn1.setOnClickListener(this);
+        /*jbalvin*/
         Btn2 = (Button) findViewById(R.id.Btn2);
+        Btn2.setOnClickListener(this);
 
-        Btn2.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(Galeriazapas.this, perfiljordan4jbalvin.class));
-            }
-        });
+    }
+
+    @Override
+    public void onClick(View view) {
+        if(view.getId()==Btn1.getId()){
+            startActivity(new Intent(Galeriazapas.this, perfil41.class));
+        }
+        if(view.getId()==Btn2.getId()){
+            startActivity(new Intent(Galeriazapas.this, perfiljordan4jbalvin.class));
+        }
     }
 }
