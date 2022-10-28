@@ -1,4 +1,4 @@
-package com.example.myapplication.general;
+package com.example.myapplication.PrBar;
 
 import androidx.appcompat.app.AppCompatActivity;
 

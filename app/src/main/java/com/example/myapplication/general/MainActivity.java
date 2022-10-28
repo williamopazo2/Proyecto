@@ -8,17 +8,22 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.myapplication.PrBar.Comunicacion;
+import com.example.myapplication.PrBar.ProgerBarr;
+import com.example.myapplication.PrBar.register;
 import com.example.myapplication.R;
-import com.example.myapplication.galeriamodelos.Galeriazapas;
 import com.google.android.material.button.MaterialButton;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements Comunicacion {
 
     private ImageButton btn_ig;
     private Button btn_registrar;
+    private ProgressBar prbar;
+    private MaterialButton btnlogin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,18 +55,16 @@ public class MainActivity extends AppCompatActivity {
         /*validacion inicio de sesion*/
         TextView nombreusuario = (TextView) findViewById(R.id.nombreusuario);
         TextView contrasenha = (TextView) findViewById(R.id.pw);
-
-        MaterialButton btnlogin = (MaterialButton) findViewById(R.id.btnlogin);
+        /*progres bar*/
+        prbar = findViewById(R.id.progresbar);
+        /*boton*/
+        btnlogin = (MaterialButton) findViewById(R.id.btnlogin);
 
         btnlogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(nombreusuario.getText().toString().equals("admin") && contrasenha.getText().toString().equals("admin")){
-                    Toast.makeText(MainActivity.this, "Sesion Iniciada", Toast.LENGTH_SHORT).show();
-                    startActivity(new Intent(MainActivity.this, Galeriazapas.class));
-                }else{
-                    Toast.makeText(MainActivity.this, "Usuario incorrecto", Toast.LENGTH_SHORT).show();
-                }
+                /*validacion inicio sesion*/
+                new ProgerBarr(MainActivity.this).execute(nombreusuario.getText().toString(),contrasenha.getText().toString(),3000);
             }
         });
 
@@ -82,5 +85,27 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+
+
+    }
+
+    @Override
+    public void toggleProgressBar(Boolean status) {
+        if(status){
+            prbar.setVisibility(View.VISIBLE);
+        }else{
+            prbar.setVisibility(View.GONE);
+        }
+    }
+
+    @Override
+    public void lanzarActividad(Class<?> tipoActividad) {
+        Intent intent = new Intent(this,tipoActividad);
+        startActivity(intent);
+    }
+
+    @Override
+    public void showMessage(String msg) {
+        Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();
     }
 }
