@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity implements Comunicacion {
         });
 
 
-        /*redireccion boton*/
+        /*redireccion botonxd*/
         btn_ig = findViewById(R.id.btn_ig);
         String URL = "https://www.instagram.com/willii_5/";
         btn_ig.setOnClickListener(new View.OnClickListener(){
