@@ -3,6 +3,11 @@ package com.example.myapplication.general;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
+import android.hardware.Sensor;
+import android.hardware.SensorEvent;
+import android.hardware.SensorEventListener;
+import android.hardware.SensorManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
@@ -16,6 +21,7 @@ import com.example.myapplication.PrBar.Comunicacion;
 import com.example.myapplication.PrBar.ProgerBarr;
 import com.example.myapplication.PrBar.register;
 import com.example.myapplication.R;
+import com.example.myapplication.gyroscope;
 import com.google.android.material.button.MaterialButton;
 
 public class MainActivity extends AppCompatActivity implements Comunicacion {
@@ -24,9 +30,14 @@ public class MainActivity extends AppCompatActivity implements Comunicacion {
     private Button btn_registrar;
     private ProgressBar prbar;
     private MaterialButton btnlogin;
+    int mov;
+    SensorManager sensorManager;
+    Sensor sensor;
+    SensorEventListener sensorEventListener;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         /*Splash screen */
         try {
             Thread.sleep(2000);
@@ -83,10 +94,53 @@ public class MainActivity extends AppCompatActivity implements Comunicacion {
             }
         });
 
+        sensorManager=(SensorManager)getSystemService(SENSOR_SERVICE);
+        sensor=sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
+
+        sensorEventListener=new SensorEventListener() {
+            @Override
+            public void onSensorChanged(SensorEvent sensorEvent) {
+                float x=sensorEvent.values[0];
+                if(x<-5 && mov==0){
+                    mov++;
+                    Toast.makeText(MainActivity.this, "applicacion solo con sentido vertical ", Toast.LENGTH_SHORT).show();
+                }else if(x>5 && mov==1){
+                    Toast.makeText(MainActivity.this, "applicacion solo con sentido vertical", Toast.LENGTH_SHORT).show();
+                    mov++;
+                }
+                if(mov==2){
+                    mov=0;
+                }
+            }
+
+            @Override
+            public void onAccuracyChanged(Sensor sensor, int i) {
+
+            }
+        };
+        start();
 
 
 
+    }
+    private void start(){
+        sensorManager.registerListener(sensorEventListener,sensor,SensorManager.SENSOR_DELAY_NORMAL);
+    }
 
+    private void stop(){
+        sensorManager.unregisterListener(sensorEventListener);
+    }
+
+    @Override
+    protected void onPause() {
+        stop();
+        super.onPause();
+    }
+
+    @Override
+    protected void onResume() {
+        start();
+        super.onResume();
     }
 
     @Override
