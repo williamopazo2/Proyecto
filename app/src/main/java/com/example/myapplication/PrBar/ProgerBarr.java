@@ -2,7 +2,7 @@ package com.example.myapplication.PrBar;
 
 import android.os.AsyncTask;
 
-import com.example.myapplication.galeriamodelos.Galeriazapas;
+import com.example.myapplication.modelos.Galeriazapas;
 
 public class ProgerBarr extends AsyncTask<Object, Void, Boolean> {
    private Comunicacion comunicacion;

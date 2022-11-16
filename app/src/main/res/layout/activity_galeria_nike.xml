@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".modelos.galeriaNike">
+    tools:context=".galeriaNike.galeriaNike">
 
     <ScrollView
 
@@ -58,19 +58,19 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:background="#E32020"
-                android:text="Jordan 4 University"
+                android:text="NIKE Air Force 1 triple white"
                 android:textAlignment="center"
                 android:textColor="@color/white" />
 
             <ImageView
                 android:id="@+id/imageView"
-                android:layout_width="256dp"
+                android:layout_width="274dp"
                 android:layout_height="172dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
                 android:contentDescription="@string/todo1"
-                app:srcCompat="@drawable/images" />
+                app:srcCompat="@drawable/trew" />
 
             <Button
                 android:id="@+id/Btn1"
@@ -87,7 +87,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#E32020"
-                android:text="Jordan 1 x J Balvin"
+                android:text="Nike SB Dunk low Panda"
                 android:textAlignment="center"
                 android:textColor="@color/white" />
 
@@ -97,7 +97,7 @@
                 android:layout_height="182dp"
                 android:layout_gravity="center"
                 android:contentDescription="@string/todo2"
-                app:srcCompat="@drawable/jbalvin" />
+                app:srcCompat="@drawable/pnd" />
 
             <Button
                 android:id="@+id/Btn2"
@@ -115,7 +115,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#E32020"
-                android:text="Jordan 1 x DIOR"
+                android:text="Nike VAPORMAX"
                 android:textAlignment="center"
                 android:textColor="@color/white" />
 
@@ -126,7 +126,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
-                app:srcCompat="@drawable/jordan1highxdior" />
+                app:srcCompat="@drawable/vpr" />
 
             <Button
                 android:id="@+id/Btn3"
@@ -144,7 +144,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#E32020"
-                android:text="Jordan 4 Military"
+                android:text="Nike Air Max 97"
                 android:textAlignment="center"
                 android:textColor="@color/white" />
 
@@ -155,7 +155,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
-                app:srcCompat="@drawable/jordan4blackmilitrari" />
+                app:srcCompat="@drawable/ns" />
 
             <Button
                 android:id="@+id/Btn4"
@@ -173,7 +173,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#E32020"
-                android:text="Jordan 4 x OFF-WHITE"
+                android:text="Nike Air Force 1 Green x OFF-WHITE"
                 android:textAlignment="center"
                 android:textColor="@color/white" />
 
@@ -184,7 +184,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
-                app:srcCompat="@drawable/jordan4offwhite" />
+                app:srcCompat="@drawable/off" />
 
             <Button
                 android:id="@+id/Btn5"

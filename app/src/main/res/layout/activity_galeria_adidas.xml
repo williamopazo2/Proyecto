@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".modelos.galeriaAdidas">
+    tools:context=".galeriaadidas.galeriaAdidas">
 
     <ScrollView
 
@@ -58,19 +58,19 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:background="#E32020"
-                android:text="Jordan 4 University"
+                android:text="Adidas Forum Exhibit Low"
                 android:textAlignment="center"
                 android:textColor="@color/white" />
 
             <ImageView
                 android:id="@+id/imageView"
-                android:layout_width="256dp"
-                android:layout_height="172dp"
+                android:layout_width="286dp"
+                android:layout_height="184dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
                 android:contentDescription="@string/todo1"
-                app:srcCompat="@drawable/images" />
+                app:srcCompat="@drawable/fl" />
 
             <Button
                 android:id="@+id/Btn1"
@@ -87,7 +87,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#E32020"
-                android:text="Jordan 1 x J Balvin"
+                android:text="Adidas YEEZY 700"
                 android:textAlignment="center"
                 android:textColor="@color/white" />
 
@@ -97,7 +97,7 @@
                 android:layout_height="182dp"
                 android:layout_gravity="center"
                 android:contentDescription="@string/todo2"
-                app:srcCompat="@drawable/jbalvin" />
+                app:srcCompat="@drawable/de" />
 
             <Button
                 android:id="@+id/Btn2"
@@ -115,18 +115,18 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#E32020"
-                android:text="Jordan 1 x DIOR"
+                android:text="Adidas YEEZY 350v2 "
                 android:textAlignment="center"
                 android:textColor="@color/white" />
 
             <ImageView
                 android:id="@+id/imageView4"
-                android:layout_width="400dp"
+                android:layout_width="wrap_content"
                 android:layout_height="188dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
-                app:srcCompat="@drawable/jordan1highxdior" />
+                app:srcCompat="@drawable/yeezy" />
 
             <Button
                 android:id="@+id/Btn3"
@@ -144,7 +144,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#E32020"
-                android:text="Jordan 4 Military"
+                android:text="AdidasOZELIA Black"
                 android:textAlignment="center"
                 android:textColor="@color/white" />
 
@@ -155,7 +155,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
-                app:srcCompat="@drawable/jordan4blackmilitrari" />
+                app:srcCompat="@drawable/oz" />
 
             <Button
                 android:id="@+id/Btn4"
@@ -173,7 +173,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#E32020"
-                android:text="Jordan 4 x OFF-WHITE"
+                android:text="Adidas OZWEEGO"
                 android:textAlignment="center"
                 android:textColor="@color/white" />
 
@@ -184,7 +184,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
-                app:srcCompat="@drawable/jordan4offwhite" />
+                app:srcCompat="@drawable/ozw" />
 
             <Button
                 android:id="@+id/Btn5"

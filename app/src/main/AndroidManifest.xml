@@ -5,7 +5,11 @@
 
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-feature android:name="android.hardware.sensor.accelerometer" android:required="true"/>
+
+    <uses-feature
+        android:name="android.hardware.sensor.accelerometer"
+        android:required="true" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -17,16 +21,46 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
+            android:name=".Ozeego"
+            android:exported="false" />
+        <activity
+            android:name=".Ozelia"
+            android:exported="false" />
+        <activity
+            android:name=".galeriaadidas.Yeezy350"
+            android:exported="false" />
+        <activity
+            android:name=".galeriaadidas.Yeezysetesientos"
+            android:exported="false" />
+        <activity
+            android:name=".galeriaadidas.ExhibitLow"
+            android:exported="false" />
+        <activity
+            android:name=".galeriaNike.AirMax97"
+            android:exported="false" />
+        <activity
+            android:name=".galeriaNike.VaporMax"
+            android:exported="false" />
+        <activity
+            android:name=".galeriaNike.DunkPanda"
+            android:exported="false" />
+        <activity
+            android:name=".galeriaNike.AirForce3white"
+            android:exported="false" />
+        <activity
+            android:name=".galeriaNike.AirForceOFF"
+            android:exported="false" />
+        <activity
             android:name=".gyroscope"
             android:exported="false" />
         <activity
             android:name=".general.mapa"
             android:exported="false" />
         <activity
-            android:name=".modelos.galeriaNike"
+            android:name=".galeriaNike.galeriaNike"
             android:exported="false" />
         <activity
-            android:name=".modelos.galeriaAdidas"
+            android:name=".galeriaadidas.galeriaAdidas"
             android:exported="false" />
         <activity
             android:name=".modelos.jordan4xoffwhite"
@@ -47,7 +81,7 @@
             android:name=".modelos.perfil41"
             android:exported="false" />
         <activity
-            android:name=".galeriamodelos.Galeriazapas"
+            android:name=".modelos.Galeriazapas"
             android:exported="false" />
         <activity
             android:name=".general.MainActivity"

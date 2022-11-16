@@ -10,7 +10,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.myapplication.R;
-import com.example.myapplication.galeriamodelos.Galeriazapas;
+import com.example.myapplication.modelos.Galeriazapas;
 
 public class register extends AppCompatActivity {
 
